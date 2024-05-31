@@ -5,9 +5,7 @@ const LeftAside = () => {
     <div className="leftAside">
       <div className="left_content">Aside</div>
       <div className="left_content">Aside</div>
-      <div className="left_content">
-        <button className="left_btn">Btn</button>
-      </div>
+      <div className="left_content">Aside</div>
     </div>
   );
 };
