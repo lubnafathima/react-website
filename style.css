@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@ body,
 .app {
   width: 100%;
   min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -20,10 +23,13 @@ body,
   border-bottom: 1px solid #000;
 }
 
-.input,
-.top-input, .content-input {
-  padding: 0.2rem 0.5rem;
+.header_input {
   min-width: 20%;
+}
+
+.input {
+  padding: 0.2rem 0.5rem;
+  width: 100%;
   font-size: 1rem;
 }
 
@@ -36,20 +42,14 @@ body,
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
   gap: 1rem;
   width: 100%;
   margin-left: 1rem;
 }
 
-.nav_item,
-.top-btn,
-.content-btn,
-.left_btn {
+.button {
   text-decoration: none;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #000;
   color: #000;
   padding: 0.5rem 0;
@@ -59,14 +59,7 @@ body,
   transition: all 0.2s ease-in-out;
 }
 
-.nav_item {
-  width: 100%;
-}
-
-.nav_item:hover,
-.top-btn:hover,
-.content-btn:hover,
-.left_btn:hover {
+.button:hover {
   background-color: #000;
   color: #fff;
 }
@@ -97,6 +90,7 @@ body,
 
 .leftAside {
   width: 25%;
+  position: relative;
 }
 
 .container {
@@ -108,8 +102,8 @@ body,
   width: 35%;
 }
 
-.left_content,
-.right_content {
+.asideBox,
+.left_box {
   width: 100%;
   height: 30vh;
   border: 1px solid #000;
@@ -118,8 +112,10 @@ body,
   align-items: center;
 }
 
-.right_content {
-  height: 40vh;
+.left_box {
+  justify-content: end;
+  align-items: start;
+  padding: 1rem;
 }
 
 .container {
@@ -135,10 +131,6 @@ body,
   flex-direction: column;
   align-items: end;
   gap: 1rem;
-}
-
-.top-input, .content-input {
-  width: 100%;
 }
 
 .content {
@@ -164,6 +156,41 @@ body,
   margin: 1rem 0;
 }
 
-.content-btn {
-  width: 100%;
+.modal_container {
+  width: 50%;
+  height: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+}
+
+.modal_title {
+  font-size: 1.5rem;
+}
+
+.modal_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 75%;
+  margin: 1rem 0;
+}
+
+.modal_btn_group {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.red {
+  background-color: #ffd2d2;
+}
+
+.green {
+  background-color: #e4ffd2;
 }

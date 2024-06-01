@@ -1,9 +1,10 @@
 import React from "react";
+import AsideBox from "./AsideBox";
 
 const RightAside = () => {
   return (
     <div className="rightAside">
-      <div className="right_content">Aside</div>
+      <AsideBox />
     </div>
   );
 };

@@ -1,17 +1,19 @@
 import React from "react";
+import Button from "./Button";
+import Input from "./Input";
 
 const Content = () => {
   return (
     <div className="content">
-      <div className="content-img">img</div>
+      <div className="content-img">Img</div>
       <div className="btn-container">
-        <button className="content-btn">Btn</button>
-        <button className="content-btn">Btn</button>
-        <button className="content-btn">Btn</button>
-        <button className="content-btn">Btn</button>
-        <button className="content-btn">Btn</button>
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
       </div>
-      <input type="text" placeholder="Input" className="content-input" />
+      <Input/>
     </div>
   );
 };
