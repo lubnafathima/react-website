@@ -14,11 +14,11 @@ const Main = ({ headerInput }) => {
         headerInput={headerInput}
         contentInput={contentInput}
         asideValue={asideValue}
-        setContentInput={setContentInput}
       />
       <Container
         contentInput={contentInput}
         containerInput={containerInput}
+        setContentInput={setContentInput}
         setContainerInput={setContainerInput}
         setAsideValue={setAsideValue}
       />
