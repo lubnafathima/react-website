@@ -1,10 +1,11 @@
 import React from "react";
-import AsideBox from "./AsideBox";
 
-const RightAside = () => {
+const RightAside = ({ contentInput }) => {
   return (
     <div className="rightAside">
-      <AsideBox />
+      <div className="asideBox">
+        {contentInput === "" ? "Aside" : contentInput}
+      </div>
     </div>
   );
 };
