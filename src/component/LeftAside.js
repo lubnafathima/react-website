@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalContainer from "./ModalContainer";
 
-const LeftAside = ({ headerInput, contentInput }) => {
+const LeftAside = ({ headerInput, contentInput, asideValue }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -17,7 +17,7 @@ const LeftAside = ({ headerInput, contentInput }) => {
       <div className="asideBox">
         {headerInput === "" ? "Aside" : headerInput}
       </div>
-      <div className="asideBox">Aside</div>
+      <div className="asideBox">{asideValue}</div>
       <div className="left_box">
         <button className="button" onClick={openModal}>
           Btn
