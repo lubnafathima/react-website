@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Header from "./component/Header";
 import Main from "./component/Main";
 
 const App = () => {
+    const [ headerInput, setHeaderInput ] = useState("");
+    
     return (
         <div className="app">
-            <Header />
-            <Main />
+            <Header headerInput={headerInput} setHeaderInput={setHeaderInput} />
+            <Main headerInput={headerInput} />
         </div>
     );
 };

@@ -18,7 +18,7 @@ const Container = () => {
   return (
     <div className="container">
       <div className="top-container">
-        <Input />
+        <input type="text" placeholder="Input" className="input" />
         <button className="button" onClick={openModal}>
           Btn
         </button>

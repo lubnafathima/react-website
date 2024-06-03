@@ -3,10 +3,11 @@ import LeftAside from "./LeftAside";
 import Container from "./Container";
 import RightAside from "./RightAside";
 
-const Main = () => {
+const Main = ({ headerInput }) => {
+  
   return (
     <div className="main">
-      <LeftAside />
+      <LeftAside headerInput={headerInput} />
       <Container />
       <RightAside />
     </div>

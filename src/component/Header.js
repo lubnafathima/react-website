@@ -2,11 +2,17 @@ import React from "react";
 import Button from "./Button";
 import Input from "./Input";
 
-const Header = () => {
+const Header = ({ headerInput, setHeaderInput }) => {
   return (
     <div className="header">
       <div className="header_input">
-        <Input />
+        <input
+          type="text"
+          placeholder="Input"
+          value={headerInput}
+          onChange={(e) => setHeaderInput(e.target.value)}
+          className="input"
+        />
       </div>
       <div className="header_content">
         <nav className="nav">

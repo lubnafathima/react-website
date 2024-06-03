@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalContainer from "./ModalContainer";
 import AsideBox from "./AsideBox";
 
-const LeftAside = () => {
+const LeftAside = ({ headerInput, containerInput }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -15,14 +15,18 @@ const LeftAside = () => {
 
   return (
     <div className="leftAside">
-      <AsideBox />
+      <div className="asideBox">{headerInput === "" ? "Aside" : headerInput}</div>
       <AsideBox />
       <div className="left_box">
         <button className="button" onClick={openModal}>
           Btn
         </button>
       </div>
-      <ModalContainer modalIsOpen={modalIsOpen} closeModal={closeModal} styleClass={"red"} />
+      <ModalContainer
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+        styleClass={"red"}
+      />
     </div>
   );
 };
