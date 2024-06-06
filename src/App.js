@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./about/page";
 import Home from "./home/page";
 
