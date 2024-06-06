@@ -19,7 +19,7 @@ const LeftAside = ({ headerInput, contentInput, asideValue }) => {
       </div>
       <div className="asideBox">{asideValue}</div>
       <div className="left_box">
-        <button className="button" onClick={openModal}>
+        <button className="button btn" onClick={openModal}>
           Btn
         </button>
         <div className="left_content">{contentInput === "" ? "Aside" : contentInput}</div>

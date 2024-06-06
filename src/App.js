@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Header from "./component/Header";
-import Main from "./component/Main";
+import { BrowserRouter, Routes, Route, Switch, Link } from "react-router-dom";
+import About from "./about/page";
+import Home from "./home/page";
 
 const App = () => {
-    const [ headerInput, setHeaderInput ] = useState("");
-    
-    return (
-        <div className="app">
-            <Header headerInput={headerInput} setHeaderInput={setHeaderInput} />
-            <Main headerInput={headerInput} />
-        </div>
-    );
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
