@@ -1,12 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const Content = ({ contentInput, setContentInput }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about", {
+      state: contentInput,
+    });
+  };
   return (
     <div className="content">
       <div className="content-img">Img</div>
       <div className="btn-container">
-        <Button />
+        <button onClick={handleClick} className="button link">
+          Btn
+        </button>
         <Button />
         <Button />
         <Button />
