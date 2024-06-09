@@ -14,9 +14,7 @@ const Content = ({ contentInput, setContentInput }) => {
     <div className="content">
       <div className="content-img">Img</div>
       <div className="btn-container">
-        <button onClick={handleClick} className="button link">
-          Btn
-        </button>
+        <Button onClick={handleClick}  />
         <Button />
         <Button />
         <Button />
